@@ -1,0 +1,155 @@
+/* Global Styles */
+* {
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* Focus styling for better visibility */
+.focus-visible {
+  outline: 2px solid #FF4081; /* Accent color */
+}
+
+/* Make buttons focusable by setting tabindex */
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: none; /* Remove default outline */
+}
+
+
+/* Landing Screen Container */
+.landing-screen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.landing-screen-left {
+    width: 100%;
+    background-image: url('../images/background.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+}
+
+/* Header Section inside Left Section */
+.landing-screen-left-header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Welcome Text Styling */
+.landing-screen-left-header-wellcom-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.landing-screen-left-header-wellcom-text-h1 {
+    color: #FFF;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.landing-screen-left-header-wellcom-text-label {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Buttons Styling */
+.landing-screen-left-header-buttons {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.landing-screen-left-header-buttons-signin,
+.landing-screen-left-header-buttons-signup {
+    display: inline;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+    line-height: normal;
+    cursor: pointer; /* Adds pointer cursor to buttons */
+}
+
+.landing-screen-left-header-buttons-signin {
+    background: #017BF4;
+}
+
+.landing-screen-left-header-buttons-signup {
+    background: transparent;
+    border: 2px solid #017BF4;
+}
+
+/* Footer Section inside Left Section */
+.landing-screen-left-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.landing-screen-left-footer-text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.landing-screen-left-footer-help {
+    color: #017BF4;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer; /* Adds pointer cursor to help link */
+}
+
+/* Right Section Styling */
+.landing-screen-right {
+    background-image: 
+        linear-gradient(194deg, rgba(20, 20, 20, 0.00) -38.36%, #141414 100%), 
+        url('../images/landingBg.png');  /* Place the gradient first, then the image */
+    background-size: cover;        /* Ensures the image covers the whole div */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gradient Overlays in Right Section */
+.landing-screen-right-top,
+.landing-screen-right-bottom {
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    background: linear-gradient(194deg, rgba(20, 20, 20, 0.00) -38.36%, #141414 100%);
+}

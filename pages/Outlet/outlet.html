@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Outlet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" onclick="loadScreen('home.html')">Home</a></li>
+            <li><a href="#" onclick="loadScreen('about.html')">About</a></li>
+            <li><a href="#" onclick="loadScreen('contact.html')">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="outlet"></div> <!-- This is the outlet for dynamic content -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

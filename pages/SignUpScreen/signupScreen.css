@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+  font-family: "Lucida Sans", Arial, Helvetica, sans-serif; /* Set font family globally */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+body {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  display: flex; /* Flexbox layout for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background: linear-gradient(
+      to right top,
+      rgba(13, 22, 24, 0.5) 0%,
+      /* Dark Slate Gray at the start */ rgba(15, 30, 32, 0.5) 25%,
+      /* Very Dark Cyan around 25% */ rgba(20, 38, 41, 0.5) 50%,
+      /* Dark Charcoal Gray at the midpoint */ rgba(15, 31, 33, 0.5) 75%,
+      /* Very Dark Blue Gray around 75% */ rgba(12, 20, 22, 0.5) 100%
+        /* Blackish Green at the end */
+    ),
+    linear-gradient(
+      to left top,
+      rgba(13, 22, 24, 0.5) 0%,
+      /* Dark Slate Gray at the start */ rgba(20, 30, 32, 0.5) 25%,
+      /* Very Dark Cyan around 25% */ rgba(20, 38, 41, 0.5) 50%,
+      /* Dark Charcoal Gray at the midpoint */ rgba(15, 31, 33, 0.5) 75%,
+      /* Very Dark Blue Gray around 75% */ rgba(12, 20, 22, 0.5) 100%
+        /* Blackish Green at the end */
+    );
+
+  background-blend-mode: overlay;
+}
+
+.signup-screen {
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #98f9ff; /* Light blue border */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    235deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(11, 39, 39, 1) 48%,
+    rgba(83, 101, 104, 1) 86%
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.15); /* Shadow effect */
+  background-blend-mode: overlay, normal; /* Blends background image with gradient */
+  backdrop-filter: blur(40px); /* Apply blur effect behind */
+
+  width: 20%; /* Fixed width for the signup screen */
+  height: 508px; /* Fixed height */
+  flex-shrink: 0; /* Prevent shrinking */
+  justify-content: space-between;
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-content: center; /* Center items along the main axis */
+  gap: 20px; /* Space between elements */
+  padding: 5%; /* Add padding inside the container */
+}
+
+.signup-screen-header {
+  display: flex; /* Flexbox layout */
+  width: 100%;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Space between elements */
+  text-align: center;
+}
+
+.signup-screen-header-logo {
+  height: 62px; /* Set height for logo */
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.signup-screen-header-text {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.signup-screen-input {
+  display: flex; /* Flexbox layout */
+  width: 100%;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  gap: 15px; /* Space between input elements */
+}
+
+.signup-screen-input-box {
+  width: 100%;
+  flex-shrink: 0; /* Prevent input from shrinking */
+  padding: 1em;
+  border-radius: 10px; /* Rounded corners */
+  background: #fff; /* White background */
+  border-color: transparent;
+
+  color: #bdbdbd; /* Light gray text color */
+  font-size: 20px; /* Set font size */
+  font-weight: 400; /* Normal font weight */
+  line-height: normal; /* Default line height */
+}
+
+.signup-screen-footer {
+  display: flex; /* Flexbox layout */
+  width: 100%;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  gap: 20px; /* Space between input elements */
+}
+
+.signup-screen-footer-btn {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0; /* Prevent input from shrinking */
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: normal;
+  cursor: pointer; /* Adds pointer cursor to buttons */
+  background: #017bf4;
+  border: 2px solid #017bf4;
+}
+
+.signup-screen-footer-text {
+  color: #fff; /* White text color */
+  text-align: center; /* Center text */
+  font-size: 14px; /* Set font size */
+  font-weight: 400; /* Normal font weight */
+  line-height: normal; /* Default line height */
+  width: 368px;
+}
+
+.signup-screen-footer-text-link {
+  color: #017bf4; /* Blue link text */
+  font-size: 16px; /* Set font size */
+  font-weight: 400; /* Normal font weight */
+  line-height: normal; /* Default line height */
+}

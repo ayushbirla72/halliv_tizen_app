@@ -1,0 +1,9 @@
+/* colors.css */
+:root {
+	--background-color: black;
+  --primary-color: #0054A0;  /* Primary Blue */
+  --secondary-color: #FFF;    /* White */
+  --accent-color: #FF4081;    /* Pink Accent */
+  --button-background: #333;  /* Button background */
+  --button-text: #FFF;        /* Button text color */
+}

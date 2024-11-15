@@ -1,0 +1,312 @@
+/* Global Styles */
+* {
+  font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+      to right top,
+      rgba(13, 22, 24, 0.5),
+      rgba(12, 20, 22, 0.5)
+    ),
+    linear-gradient(to left top, rgba(13, 22, 24, 0.5), rgba(12, 20, 22, 0.5));
+  background-blend-mode: overlay;
+}
+
+.home-screen-sidebar {
+  background-color: transparent;
+  height: 100vh;
+  width: 12%; /* Compact sidebar width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: visible; /* Hide overflowed content */
+}
+
+.home-screen-sidebar-container {
+  background-color: transparent;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 70%;
+  height: 100px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  gap: 40px;
+  height: 50vh;
+}
+
+.sidebar-icon {
+  width: 60px; /* Smaller icon size for compact mode */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  transition: width 0.5s, justify-content 0.3s; /* Smooth transition */
+  text-decoration: none;
+}
+
+.home-screen-sidebar:hover .sidebar-icon {
+  justify-content: flex-start; /* Align items to start when expanded */
+  width: 300px; /* Expand width on hover to show text */
+  gap: 10px;
+}
+
+.sidebar-icons-svg {
+  width: 40px; /* Icon size */
+  height: auto;
+  color: rgba(1, 123, 244, 1);
+}
+
+/* Title handling with overflow */
+.sidebar-icons-title {
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 22px;
+  font-weight: 800;
+  color: rgba(1, 123, 244, 1);
+  display: inline-block; /* Ensures title is treated as a block-level element */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures text doesn't overflow the container */
+  text-overflow: ellipsis; /* Adds ellipsis (...) when text overflows */
+  transition: opacity 0.3s ease; /* Smooth fade-in on hover */
+  opacity: 0;
+  max-width: calc(
+    100% - 70px
+  ); /* Takes the remaining space, adjusted for icon width */
+}
+
+.home-screen-sidebar:hover .sidebar-icons-title {
+  opacity: 1; /* Show text on hover */
+}
+
+.home-screen-container {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-screen-serach-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px;
+  background-color: #f5f5f5;
+  width: 100%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  max-width: 500px;
+}
+
+.home-screen-serach-box svg {
+  margin-right: 10px;
+}
+
+.home-screen-serach-box-input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.home-screen-serach-box-input::placeholder {
+  color: #888;
+}
+
+.home-screen-sliding-box {
+  width: 1724px;
+  height: 854px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: white;
+  border-radius: 0px 0px 0px 60px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.home-screen-sliding-box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5%;
+  gap: 20px;
+}
+
+.home-screen-sliding-box-left-label {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-screen-sliding-box-left-movie-name {
+  width: 457px;
+  height: 125.215px;
+  flex-shrink: 0;
+}
+
+.home-screen-sliding-box-left-movie-name-logo {
+  width: 457px;
+  height: 125.215px;
+  flex-shrink: 0;
+}
+
+.home-screen-sliding-box-left-movie-description {
+  width: 889px;
+  height: 95px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-screen-sliding-box-left-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.home-screen-sliding-box-left-buttons-play {
+  width: 136px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  border-color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-screen-sliding-box-left-buttons-watch-trailer {
+  border-radius: 10px;
+  background: #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  gap: 20px;
+
+  width: 209px;
+  height: 45px;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.home-screen-sliding-box-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+.home-screen-sliding-box-right-left-arrow {
+  border-radius: 8px;
+  border: 1px solid var(--Black-12, #1f1f1f);
+  background: var(--Black-06, #0f0f0f);
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.home-screen-sliding-box-right-right-arrow {
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 8px;
+  border: 1px solid var(--Black-12, #1f1f1f);
+  background: var(--Black-06, #0f0f0f);
+}
+
+
+.home-screen-new-release{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.home-screen-new-release-header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.home-screen-new-release-list{
+	display: flex;
+	flex-direction: row;
+    width: 600px;
+    overflow: scroll;
+	
+}
+
+.home-screen-new-release-container {
+display: flex;
+width: 311px;
+height: 440px;
+padding: 20.046px 20px 19.043px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+}
+
+.home-screen-new-release-container-img{
+	
+	height: 100%;
+	width: 100%;
+}

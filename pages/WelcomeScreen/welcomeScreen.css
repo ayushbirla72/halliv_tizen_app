@@ -1,0 +1,102 @@
+/* Global Styles */
+* {
+  font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.85) -4.34%,
+      rgba(0, 0, 0, 0.55) 95.48%
+    ),
+    url("../../images/welcomeScreenBgTV.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 80px;
+}
+
+.welcome-screen-halliv-logo {
+  position: absolute;
+  top: 70px; /* Adjust as needed */
+  left: 70px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+}
+
+.welcome-screen-container-header {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.welcome-screen-container-info {
+  display: flex;
+  flex-direction: column;
+  width: 1204px;
+  gap: 20px;
+  padding: 4%;
+
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.welcome-screen-container-info-p {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.welcome-screen-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-screen-footer-btn {
+  width: 413px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #017bf4;
+  border-color: #017bf4;
+
+  color: #fff;
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

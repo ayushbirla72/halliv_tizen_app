@@ -1,0 +1,22 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="24" fill="#1E1E1E"/>
+<g id="Watch page:1 - TV" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="1721" transform="translate(-86 -508)" fill="#1A1A1A"/>
+<g id="Component 7">
+<g id="Rectangle 180" filter="url(#filter0_f_0_1)">
+<rect x="-86" y="-508" width="480" height="1082" fill="black" fill-opacity="0.7"/>
+</g>
+<path id="Vector" d="M23.2824 0L18.5336 0.9425L21.8444 5.22L24.2249 4.73667L23.2824 0ZM14.9811 1.64333L12.6007 2.11458L15.9236 6.38L18.2919 5.90875L14.9811 1.64333ZM9.06027 2.80333L6.67985 3.29875L10.0028 7.56417L12.3711 7.09292L9.06027 2.80333ZM3.12735 4.01167L1.94319 4.24125C1.31532 4.3667 0.762891 4.73618 0.407205 5.26858C0.0515184 5.80098 -0.0783534 6.45276 0.0461051 7.08083L0.517355 9.44917L6.43819 8.27708L3.12735 4.01167ZM0.517355 9.44917V21.5325C0.517355 22.1734 0.771967 22.7881 1.22518 23.2413C1.67839 23.6946 2.29308 23.9492 2.93402 23.9492H22.2674C23.6086 23.9492 24.684 22.8737 24.684 21.5325V9.44917H0.517355Z" fill="#BDBDBD"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_1" x="-236" y="-658" width="780" height="1382" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="1721" fill="white" transform="translate(-86 -508)"/>
+</clipPath>
+</defs>
+</svg>
