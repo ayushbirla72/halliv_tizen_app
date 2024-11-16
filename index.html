@@ -28,8 +28,12 @@
             </div>
 
             <div class="landing-screen-left-header-buttons">
-                <button id="signinBtn" class="landing-screen-left-header-buttons-signin">Sign in now</button>
-                <button id="signupBtn" class="landing-screen-left-header-buttons-signup">New user? SIGN UP</button>
+                <button id="signinBtn" class="landing-screen-left-header-buttons-signin focusable" tabindex='0'
+                                data-sn-up="null" data-sn-down="#signup" data-sn-left="null"
+                                data-sn-right="null" >Sign in now</button>
+                <button id="signupBtn" class="landing-screen-left-header-buttons-signup focusable" id="signup"  tabindex='0'
+                                data-sn-up="#signinBtn" data-sn-down="null" data-sn-left="null"
+                                data-sn-right="null" >New user? SIGN UP</button>
             </div>
         </div>
 

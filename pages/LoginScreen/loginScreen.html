@@ -14,6 +14,7 @@
     <!-- Title of the webpage -->
     <title>Tizen Web IDE - Tizen - Samsung Tizen TV basic Application</title>
     
+    
     <!-- Linking to external CSS file -->
     <link rel="stylesheet" type="text/css" href="loginScreen.css"/>
     
@@ -46,8 +47,9 @@
     <!-- login form input section -->
     <div class="login-screen-input">
         <!-- Form for collecting user details -->
-        <form  id="login-form" method="POST" class="login-screen-input">
-  <input id="email" type="email" class="login-screen-input-box" placeholder="Email Address" required>
+        <form  id="login-form" method="POST" class="login-screen-input focusable"  >
+  <input id="email" tabindex='0' data-sn-up="null"
+                            data-sn-down="#send-otp-btn" data-sn-right="null" data-sn-left="null"   type="email" class="login-screen-input-box" placeholder="Email Address" required>
         </form>
     </div>
     
@@ -56,7 +58,8 @@
     <!-- Footer section for login screen -->
     <div class="login-screen-footer">
         <!-- Button to submit OTP -->
-         <button type="submit" id="send-otp-btn" class="login-screen-footer-btn focusable">Sent OTP</button>
+         <button type="submit" id="send-otp-btn" id="userName" tabindex='0' data-sn-up="null"
+                            data-sn-down="#password" data-sn-right="null" data-sn-left="null" class="login-screen-footer-btn focusable">Sent OTP</button>
         
         <!-- Text with links to terms and privacy policy -->
         <p class="login-screen-footer-text">By creating an account you agree to our 
